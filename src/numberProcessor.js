@@ -59,6 +59,7 @@ function calculateAverage(numbers) {
 }
 
 //testing
+if (require.main == module) {
 const numberText = fs.readFileSync('./data/sample-numbers.txt','utf8');
 const numbers = parseNumbers(numberText);
 
@@ -66,7 +67,7 @@ console.log('Sum:', sumNumbers(numbers));
 console.log('Highest:', findHighest(numbers));
 console.log('Lowest:', findLowest(numbers));
 console.log('Average:', calculateAverage(numbers));
-
+}
 module.exports = {
     parseNumbers, 
     sumNumbers, 

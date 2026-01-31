@@ -6,5 +6,5 @@ The only way to learn a new programming language is by writing programs in it.
 Simplicity is the ultimate sophistication.
 Make it work, make it right, make it fast.
 Good code is its own best documentation.
-Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+Any fool can write code that a computer can understand. Good programmers write code that humans can understand. 
 Experience is the name everyone gives to their mistakes.

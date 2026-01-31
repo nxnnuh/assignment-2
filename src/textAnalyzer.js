@@ -38,6 +38,8 @@ function countLines(text) {
 }
 
 //testing 
+//added if require.main because running npm test was executing this instead of test file
+if (require.main === module) {
 const textTest = fs.readFileSync('./data/sample-text.txt','utf8');
 console.log('sample-text.txt: ')
 console.log('Word count: ', countWords(textTest));
@@ -49,6 +51,7 @@ console.log('quotes.txt: ')
 console.log('Word count: ', countWords(quotesTest));
 console.log('Longest word: ', findLongestWord(quotesTest));
 console.log('Line count: ', countLines(quotesTest));
+}
 
 //export for jest test
 module.exports = {
