@@ -32,7 +32,7 @@ function findLongestWord(text) {
 //count number of lines in text
 function countLines(text) {
     if (!text || text.trim() === ''){
-        return 0:
+        return 0;
     }
     return text.split('\n').length;
 }
@@ -51,4 +51,8 @@ console.log('Longest word: ', findLongestWord(quotesTest));
 console.log('Line count: ', countLines(quotesTest));
 
 //export for jest test
-module.exports = {countWords, findLongestWord, countLines};
+module.exports = {
+    countWords, 
+    findLongestWord, 
+    countLines
+};
